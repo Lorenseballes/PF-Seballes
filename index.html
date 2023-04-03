@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inmobiliaria Uruprop</title>
+    <title>Inmobiliaria Uruprop/Inicio</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Bienvenidos a Inmobiliaria Uruporp, nos dedicamos a la venta y alquileres de propiedades en todo Uruguay."
+    />
+    <meta
+      name="keywords"
+      content=" Inmobiliaria, Inmuebles, Alquileres, Ventas, Apartamento,Casa, Local comercial, Uruprop"
     />
     <!-- favicon -->
     <link rel="icon" href="imegenes/logo.icon" type="image/x-icon" />
@@ -21,7 +29,7 @@
       crossorigin="anonymous"
     />
     <!-- estilo externo -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,29 +76,14 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-toggler"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
           <a class="navbar-brand" href="index.html">
-            <img
-              class="img-fluid"
-              src="imagenes/banner.jpeg"
-              width="100"
-              alt="logo"
-            />
+            <img class="img-fluid" src="imagenes/banner.jpeg" width="100" alt="logo" />
           </a>
-          <ul
-            class="navbar-nav d-flex justify-content-center align-items-center"
-          >
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="alquileres.html">ALQUILERES</a>
             </li>
@@ -113,39 +106,25 @@
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">
-              <font style="vertical-align: inherit"
-                ><font style="vertical-align: inherit"
-                  >Encontrá tu próximo hogar aquí</font
-                ></font
-              >
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit">Encontrá tu próximo hogar aquí</font>
+              </font>
             </h1>
             <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                <font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit"
-                    >Seleccione opción</font
-                  ></font
-                >
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">Seleccione opción</font>
+                </font>
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Venta</a></li>
                 <li><a class="dropdown-item" href="#">Alquiler</a></li>
                 <li><a class="dropdown-item" href="#">Alquiler temporal</a></li>
               </ul>
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                <font style="vertical-align: inherit"
-                  ><font style="vertical-align: inherit"
-                    >Opción de vivienda</font
-                  ></font
-                >
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">Opción de vivienda</font>
+                </font>
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Casas</a></li>
@@ -155,26 +134,11 @@
             </div>
             <div class="input-group w-60">
               <span class="input-group-text" id="basic-addon1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  ></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                 </svg>
               </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Buscar por ubicación"
-                aria-label="Ejemplo de grupo de entrada"
-                aria-describedby="basic-addon1"
-              />
+              <input type="text" class="form-control" placeholder="Buscar por ubicación" aria-label="Ejemplo de grupo de entrada" aria-describedby="basic-addon1" />
             </div>
           </div>
         </div>
@@ -184,11 +148,7 @@
     <div class="promo">
       <div class="card-group">
         <div class="card">
-          <img
-            src="imagenes/casapunta.jpg"
-            class="card-img-top"
-            alt="CasaPuntadelEste"
-          />
+          <img src="imagenes/casapunta.jpg" class="card-img-top" alt="CasaPuntadelEste" />
           <div class="card-body">
             <h5 class="card-title">ALQUILER EN PUNTA DEL ESTE</h5>
             <p class="card-text">
@@ -197,11 +157,7 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="imagenes/casamontevideo.jpg"
-            class="card-img-top"
-            alt="CasaMontevideo"
-          />
+          <img src="imagenes/casamontevideo.jpg" class="card-img-top" alt="CasaMontevideo" />
           <div class="card-body">
             <h5 class="card-title">APARTAMENTO EN VENTA EN MONTEVIDEO</h5>
             <p class="card-text">
@@ -211,11 +167,7 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="imagenes/casacolonia.jpg"
-            class="card-img-top"
-            alt="CasaColonia"
-          />
+          <img src="imagenes/casacolonia.jpg" class="card-img-top" alt="CasaColonia" />
           <div class="card-body">
             <h5 class="card-title">ALQUILER CASA EN COLONIA DEL SACRAMENTO</h5>
             <p class="card-text">
@@ -227,11 +179,7 @@
       </div>
       <div class="card-group">
         <div class="card">
-          <img
-            src="imagenes/aptopiria.jpg"
-            class="card-img-top"
-            alt="AptoPiria"
-          />
+          <img src="imagenes/aptopiria.jpg" class="card-img-top" alt="AptoPiria" />
           <div class="card-body">
             <h5 class="card-title">APARTAMENTO EN VENTA EN PIRIAPOLIS</h5>
             <p class="card-text">
@@ -240,11 +188,7 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="imagenes/casaflorida.jpg"
-            class="card-img-top"
-            alt="CasaFlorida"
-          />
+          <img src="imagenes/casaflorida.jpg" class="card-img-top" alt="CasaFlorida" />
           <div class="card-body">
             <h5 class="card-title">ALQUILER MENSUAL Y TEMPORAL EN FLORIDA</h5>
             <p class="card-text">
@@ -253,11 +197,7 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="imagenes/aptopuntaballena.jpg"
-            class="card-img-top"
-            alt="Puntaballena"
-          />
+          <img src="imagenes/aptopuntaballena.jpg" class="card-img-top" alt="Puntaballena" />
           <div class="card-body">
             <h5 class="card-title">APARTAMENTO EN PUNTA BALLENA</h5>
             <p class="card-text">
@@ -272,14 +212,8 @@
     <div class="container-fluid">
       <div class="secmail">
         <h2 class="text-center">Recibí propiedades en tu mail</h2>
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Ingrese su e-mail"
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
-          />
+        <div class="input-group mb-3 text-center">
+          <input type="text" class="form-control" placeholder="Ingrese su e-mail" aria-label="Recipient's username" aria-describedby="button-addon2" />
           <button class="btn-sus" type="button" id="button-addon2">
             Suscribirme
           </button>
@@ -288,48 +222,35 @@
     </div>
     <!-- footer -->
     <div class="container-fluid">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="index.html">
             <img src="imagenes/logo.jpeg" width="80" alt="logo" />
           </a>
-          <span class="mb-3 mb-md-0 text-muted"
-            >INMOBILIARIA URUPROP <br />Dirección: Av. Brasil 1020
-            <br />Tel:29014958</span
-          >
+          <span class="mb-3 mb-md-0 text-muted">INMOBILIARIA URUPROP <br />Dirección: Av. Brasil 1020
+            <br />Tel:29014958</span>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <span class="nav col-md-4 justify-content-start list-unstyled d-flex"
-            >SEGUINOS EN:</span
-          >
+        <ul class="navlist col-md-4 justify-content-end list-unstyled d-flex">
+          <span class="navlist col-md-4 justify-content-start list-unstyled d-flex">SEGUINOS EN:</span>
           <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use></svg
-            ></a>
+            <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a>
           </li>
           <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use></svg
-            ></a>
+            <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a>
           </li>
           <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use></svg
-            ></a>
+            <a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a>
           </li>
         </ul>
       </footer>
     </div>
     <!-- js bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
