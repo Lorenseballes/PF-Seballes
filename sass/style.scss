@@ -1,23 +1,19 @@
-       /*Pagina principal*/
-       .containerseg {
-        padding: 0px;
-    }
-    .card {
-        background-color: #f1f1f1;
-        padding: 20px 20px 20px 20px;
-        margin: 0px;
-    }
+       /*Variables*/
+       $fondo-color: #f1f1f1;
+       $font-general: 'Montserrat', sans-serif; 
+       
+    /*Pagina principal*/
     body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #f1f1f1;
+        font-family: $font-general;
+        background-color:  $fondo-color;
     }
     .navbar{
         padding: 1rem;
-        background-color: #f1f1f1;
-    }
-    .navbar-collapse {
-        align-items: center;
-        justify-content: space-between;
+        background-color:  $fondo-color;
+        .collapse {
+            align-items: center;
+            justify-content: space-between;
+        }
     }
     section {
         height: 500px;
@@ -26,26 +22,33 @@
         background-image: url(/imagenes/fondouno.jpg);
         background-size: 100%;
     }
-   
+    .card {
+        background-color:  $fondo-color;
+        padding: 20px 20px 20px 20px;
+        margin: 0px;
+    }
     @media screen and (max-width: 767px) {
-        .navbar-brand {
-            display: none;
+     .navbar-brand {
+        display: none;
         }
     }
      @media screen and (max-width: 807px) {
+        
+        .d-block {
+            padding: 0px;
+        }
         section {
             background-image: url(/imagenes/fondouno.jpg);
             height: 300px;
             background-size: 100%;
             background-repeat: no-repeat;
+            .fw-light{
+                color: $fondo-color;
+            }
         }
-        .d-block {
-            padding: 0px;
-        }
+        
     }
-    .fw-light{
-        color: aliceblue;
-    }
+    
     @media screen and (max-width: 576px) {
         .dropdown {
             display: none;
@@ -55,24 +58,24 @@
         background-color: #86d2df;
         padding: 0px;
         height: 170px;
-    }
-    h2 {
-        color: #545859 ;
-    }
-    .btn-sus {
-        border-bottom:transparent;
-        border: 1px;
-        font-family: 'Montserrat', sans-serif;
+        h2 {
+            color: #545859 ;
+        }
+        .btn-sus {
+            border-bottom:transparent;
+            border: 1px;
+            font-family: $font-general;
+        }
     }
     .container-fluid{
         padding-left: 0%;
         padding-right: 0%;
     }
-            /*Contacto*/
-        @import "contacto";
+        /*Contacto*/
+       @import "contacto";
     
         /*nosotros*/
        @import "nosotros";
 
          /*ventas*/
-         @import "ventas";
+       @import "ventas";

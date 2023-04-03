@@ -1,14 +1,5 @@
+/*Variables*/
 /*Pagina principal*/
-.containerseg {
-  padding: 0px;
-}
-
-.card {
-  background-color: #f1f1f1;
-  padding: 20px 20px 20px 20px;
-  margin: 0px;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f1f1f1;
@@ -18,8 +9,7 @@ body {
   padding: 1rem;
   background-color: #f1f1f1;
 }
-
-.navbar-collapse {
+.navbar .collapse {
   align-items: center;
   justify-content: space-between;
 }
@@ -28,8 +18,14 @@ section {
   height: 500px;
   margin: 0px;
   padding: 0px;
-  background-image: url(/imagenes/fondouno\ \(1\).jpg);
+  background-image: url(/imagenes/fondouno.jpg);
   background-size: 100%;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -38,20 +34,19 @@ section {
   }
 }
 @media screen and (max-width: 807px) {
+  .d-block {
+    padding: 0px;
+  }
   section {
-    background-image: url(/imagenes/fondouno\ \(1\).jpg);
+    background-image: url(/imagenes/fondouno.jpg);
     height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  .d-block {
-    padding: 0px;
+  section .fw-light {
+    color: #f1f1f1;
   }
 }
-.fw-light {
-  color: aliceblue;
-}
-
 @media screen and (max-width: 576px) {
   .dropdown {
     display: none;
@@ -62,12 +57,10 @@ section {
   padding: 0px;
   height: 170px;
 }
-
-h2 {
+.secmail h2 {
   color: #545859;
 }
-
-.btn-sus {
+.secmail .btn-sus {
   border-bottom: transparent;
   border: 1px;
   font-family: "Montserrat", sans-serif;
@@ -79,27 +72,26 @@ h2 {
 }
 
 /*Contacto*/
-.mb-3 {
-  width: 600px;
+/*Titulo*/
+.container-fluid h1 {
+  color: #545859;
 }
-
-.mb-3 label {
+.container-fluid p {
   color: #545859;
   font-weight: bold;
 }
 
+/*Formulario de contacto*/
 .contacto {
   background-image: url(/imagenes/fotocontacto.jpg);
   height: 600px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-.container-fluid h1 {
-  color: #545859;
+.contacto .mb-3 {
+  width: 600px;
 }
-
-.container-fluid p {
+.contacto label {
   color: #545859;
   font-weight: bold;
 }
@@ -110,14 +102,15 @@ h2 {
     height: 350px;
     background-repeat: no-repeat;
   }
-  .mb-3 {
+  .contacto .mb-3 {
     width: 300px;
     height: 50%;
     font-size: small;
   }
 }
 /*nosotros*/
-/*general definimos los estilos mobile*/
+/*variables*/
+/*general estilos mobile*/
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -137,8 +130,7 @@ body {
   padding: 0 20px;
   grid-column-gap: 10px;
 }
-
-.item {
+.grid-container .item {
   padding: 0px;
   border: none;
 }
@@ -150,16 +142,14 @@ body {
   height: 100%;
   padding: 0px;
 }
-
-h2 {
+.nav h2 {
   text-align: center;
   font-size: 24px;
   color: #545859;
   justify-items: center;
   padding: 0px;
 }
-
-p {
+.nav p {
   text-align: center;
   font-size: 12px;
   color: #080808;
@@ -170,16 +160,14 @@ p {
   grid-area: header;
   display: flex;
   border: none;
-  background: #F1F1F1;
+  background: #f1f1f1;
   align-items: start;
   justify-content: space-between;
 }
-
 .header img {
   width: 120px;
   height: 90px;
 }
-
 .header button {
   background: none;
   display: flex;
@@ -188,13 +176,12 @@ p {
   height: 70px;
   border: none;
 }
-
 .header .links {
   display: none;
 }
 
 .footer {
-  background: #F1F1F1;
+  background: #f1f1f1;
   grid-area: footer;
 }
 
@@ -205,7 +192,7 @@ p {
     grid-template-rows: 20vh 80vh 30vh;
     padding: 0;
   }
-  .item {
+  .grid-container .item {
     padding: 10px;
   }
   .nav {
@@ -215,14 +202,14 @@ p {
     height: 100%;
     padding: 0px;
   }
-  h2 {
+  .nav h2 {
     text-align: center;
     font-size: 32px;
     color: #545859;
     justify-items: center;
     padding: 0px;
   }
-  p {
+  .nav p {
     text-align: center;
     font-size: 12px;
     color: #080808;
@@ -253,31 +240,29 @@ p {
     text-align: center;
     color: #545859;
   }
+  .redes {
+    display: grid;
+    background-color: #f1f1f1;
+    padding: 0px;
+    justify-items: center;
+  }
+  .redes img {
+    display: grid;
+    width: 120px;
+    height: 90px;
+  }
 }
-.redes img {
-  display: grid;
-  width: 120px;
-  height: 90px;
-}
-
-.redes {
-  display: grid;
-  background-color: #F1F1F1;
-  padding: 0px;
-  justify-items: center;
-}
-
 /*definimos los estilos desktop*/
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   .grid-container {
     grid-template-areas: "header" "nav" "footer";
     grid-template-rows: 20vh 80vh 20vh;
     padding: 0;
   }
-  .item {
+  .grid-container .item {
     padding: 0px;
     box-sizing: border-box;
   }
@@ -287,14 +272,15 @@ p {
     width: 100%;
     height: 100%;
   }
-  h2 {
+  .nav h2 {
     text-align: center;
     font-size: 32px;
     color: #545859;
     align-items: center;
     padding: 0px;
+    font-family: "Montserrat", sans-serif;
   }
-  p {
+  .nav p {
     font-size: 18px;
     color: #080808;
     text-align: center;
@@ -316,6 +302,21 @@ p {
     margin: 12px;
     width: unset;
     color: #545859;
+  }
+  .footer {
+    background: #f1f1f1;
+    grid-area: footer;
+  }
+  .footer .redes {
+    display: grid;
+    background-color: #f1f1f1;
+    padding: 0px;
+    justify-items: center;
+  }
+  .footer .redes img {
+    display: grid;
+    width: 150px;
+    height: 120px;
   }
 }
 /*ventas*/

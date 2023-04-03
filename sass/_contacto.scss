@@ -1,33 +1,36 @@
-.mb-3 {
-    width: 600px;
-}
-.mb-3 label{
+     /*Titulo*/
+.container-fluid {
+    h1{
+    color:#545859;
+    }
+   p {
     color:#545859;
     font-weight: bold;
+    }
 }
+     /*Formulario de contacto*/
 .contacto {
     background-image: url(/imagenes/fotocontacto.jpg);
     height: 600px;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-.container-fluid h1{
-    color:#545859;
-    
-}
-.container-fluid p {
-    color:#545859;
-    font-weight: bold;
+    .mb-3 {
+        width: 600px;
+    }
+    label{
+        color:#545859;
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 807px) {
     .contacto {
         background-image: url(/imagenes/fotocontacto.jpg);
         height: 350px ;
         background-repeat: no-repeat;
-    }
     .mb-3 {
         width: 300px;
         height: 50%;
         font-size: small;
+    }
     }
 }
