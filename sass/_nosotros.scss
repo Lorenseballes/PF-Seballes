@@ -35,7 +35,7 @@ body {
 }
   .nav {
   display: grid;
-  background-image: url(/imagenes/fondonos.jpeg);
+  background-image: url(/imagenes/fondonos.jpg);
   width: 100%;
   height:100%;
   padding: 0px;
@@ -82,6 +82,18 @@ p {
 .footer {
 	background: $fondo-color;
 	grid-area: footer;
+  .redes{
+    display: grid;
+    background-color: $fondo-color;
+    padding: 0px;
+    justify-items: center;
+
+  img {
+      display: grid;
+      width: 130px;
+     height: 110px;
+  }
+}
 }
 
 /*definimos los estilos tablet*/
@@ -100,7 +112,7 @@ p {
 
 .nav {
     display: grid;
-    background-image: url(/imagenes/fondonos.jpeg);
+    background-image: url(/imagenes/fondonos.jpg);
     width: 100%;
     height:100%;
     padding: 0px;
@@ -184,7 +196,7 @@ p {
 
 .nav {
   display: grid;
-  background-image: url(/imagenes/fondonos.jpeg);
+  background-image: url(/imagenes/fondonos.jpg);
   width: 100%;
   height:100%;
 
